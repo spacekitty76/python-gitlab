@@ -6,5 +6,5 @@ gl.auth()
 
 # list projects in a given group
 group = gl.groups.get(7005886)
-for project in group.projects.list():
-    print(project)
+for project in group.projects.list(as_list = False):
+    print(project.name)
